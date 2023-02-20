@@ -70,7 +70,7 @@
 
                 .logo{
                     img{
-                        width: 20px;
+                        width: 100px;
                     }
                 }
 
@@ -109,6 +109,21 @@
                 }
             }
          }
+
+         //Footer
+          footer{
+           margin-top: 100px;
+           padding: 20px;
+           background-color: lightgreen;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           font-size: 12px;
+
+           img{
+             height: 50px;
+           }
+         } 
     }
 }
 

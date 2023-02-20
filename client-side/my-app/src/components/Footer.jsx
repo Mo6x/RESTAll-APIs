@@ -1,9 +1,14 @@
 import React from "react";
-
+import Logo from "../asserts/blog-mn.png";
 
 const Footer = () => {
     return(
-        <div></div>
+        <footer>
+          <img src={Logo} alt="" />
+          <span>
+            Made with and <b>React.js</b>
+          </span>
+        </footer>
     )
 }
 export default Footer;
