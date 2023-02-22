@@ -11,26 +11,26 @@ const Home = () => {
     const posts = [
         {
             id: 1,
-            title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium, suscipit.", 
-            desc: " suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
+            title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.", 
+            desc: "Nihil laudantium, suscipit suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
             img: IMG1
         },
         {
             id: 2,
-            title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium, suscipit.", 
-            desc: " suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
+            title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.", 
+            desc: "Nihil laudantium, suscipit suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
             img: IMG2
         },
         {
             id: 3,
-            title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium, suscipit.", 
-            desc: " suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
+            title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.", 
+            desc: "Nihil laudantium, suscipit suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
             img: IMG3
         },
         {
             id: 4,
-            title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium, suscipit.", 
-            desc: " suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
+            title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.", 
+            desc: "Nihil laudantium, suscipit suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
             img: IMG4
         },
     ]
