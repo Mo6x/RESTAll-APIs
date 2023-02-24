@@ -1,6 +1,6 @@
 import React from "react";
-import Flower from "../asserts/smart-flower.jpeg";
-import Christ from "../asserts/Christ.jpeg";
+import flower from "../asserts/smart-flower.jpeg";
+import christ from "../asserts/Christ.jpeg";
 
 
 
@@ -8,9 +8,9 @@ const Single = () => {
     return(
         <div className="single">
             <div className="content">
-                <img src={Flower} alt="" />
+            <img src={flower} className="Single-flower" alt="flower" />
                 <div className="user">
-                    <img src={Christ} alt="" />
+                <img src={christ} className="App-logo" alt="logo" />
                     <div className="info">
                         <span>Christ</span>
                         <p>Posted 2 days ago</p>
