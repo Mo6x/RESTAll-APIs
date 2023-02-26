@@ -12,7 +12,7 @@ const Write = () => {
             <diV className="content">
                 <input type="text" placeholder="Title" />
                 <div className="editorContainer">
-                  <ReactQuill theme="snow" value={value} onChange={setvalue} />
+                  <ReactQuill className="editor" theme="snow" value={value} onChange={setvalue} />
                 </div>
             </diV>
             <div className="menu">
@@ -25,7 +25,7 @@ const Write = () => {
                         <b>Visibility: </b> Public
                     </span>
                     <input step={{display: "name"}} type="file" id="file" name="" />
-                    <label htmlFor="">Upload Image</label>
+                    <label className="file" htmlFor="file">Upload Image</label>
                    <div className="buttons">
                     <button>Save as a draft</button>
                     <button>Update</button>
