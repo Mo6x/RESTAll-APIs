@@ -1,39 +1,61 @@
 import React from "react";
+import { 
+    useEffect,
+    useLocation,
+    useState,
+} from "react";
 import { Link } from "react-router-dom";
-import IMG1 from "../asserts/spring-onion.jpeg";
-import IMG2 from "../asserts/glass-cup.jpeg";
-import IMG3 from "../asserts/onion.jpeg";
-import IMG4 from "../asserts/oranges.jpeg";
+import axios from "axios";
+
+// import IMG1 from "../asserts/spring-onion.jpeg";
+// import IMG2 from "../asserts/glass-cup.jpeg";
+// import IMG3 from "../asserts/onion.jpeg";
+// import IMG4 from "../asserts/oranges.jpeg";
  
 
 const Home = () => {
-   
-    const posts = [
-        {
-            id: 1,
-            title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.", 
-            desc: "Nihil laudantium, suscipit suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
-            img: IMG1
-        },
-        {
-            id: 2,
-            title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.", 
-            desc: "Nihil laudantium, suscipit suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
-            img: IMG2
-        },
-        {
-            id: 3,
-            title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.", 
-            desc: "Nihil laudantium, suscipit suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
-            img: IMG3
-        },
-        {
-            id: 4,
-            title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.", 
-            desc: "Nihil laudantium, suscipit suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
-            img: IMG4
-        },
-    ]
+      const [posts, setPosts] = useState([]);
+      const cat = useLocation().search
+
+      useEffect(() => {
+        const fetchData = async ()=> {
+           try{
+             const res = await axios.get(`/posts${cat}`);
+             setPosts(res.data);
+           }catch(err){
+
+           }
+        };
+        fetchData();
+      },[cat]);
+
+
+    // const posts = [
+    //     {
+    //         id: 1,
+    //         title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.", 
+    //         desc: "Nihil laudantium, suscipit suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
+    //         img: IMG1
+    //     },
+    //     {
+    //         id: 2,
+    //         title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.", 
+    //         desc: "Nihil laudantium, suscipit suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
+    //         img: IMG2
+    //     },
+    //     {
+    //         id: 3,
+    //         title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.", 
+    //         desc: "Nihil laudantium, suscipit suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
+    //         img: IMG3
+    //     },
+    //     {
+    //         id: 4,
+    //         title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.", 
+    //         desc: "Nihil laudantium, suscipit suscipit voluptates tempora ullam amet  Dicta eius voluptatem natus ipsam, Exercitationem officia ea id asperiores dolorem facere debitis natus! Dolorem.",
+    //         img: IMG4
+    //     },
+    // ]
 
     return(
         <div className="home">

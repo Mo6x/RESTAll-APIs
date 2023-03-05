@@ -9,6 +9,10 @@ import Menu from "../components/Menu";
 
 
 const Single = () => {
+     
+
+
+
     return(
         <div className="single">
             <div className="content">
