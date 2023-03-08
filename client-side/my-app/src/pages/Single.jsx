@@ -55,7 +55,7 @@ const Single = () => {
                     </div>
                  {currentUser.username === post.username && (
                     <div className="edit">
-                        <Link to={`/write?edit=2`}>
+                        <Link to={`/write?edit=2`} state={post}>
                        <img src={Edit} alt="edit pics" />
                         </Link>
                        <img onClick={handleDelete} src={Delete} alt="" />
@@ -65,7 +65,7 @@ const Single = () => {
                 <h1>{post.title}</h1>
                 {post.desc}
             </div>
-            <Menu />
+            <Menu cat={post.cat}/>
         </div>
     );
 };
